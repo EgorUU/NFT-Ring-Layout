@@ -1,0 +1,73 @@
+$images: (url('../img/blogs/Новая папка/Rectangle 22.png'), url('../img/blogs/Новая папка/Rectangle 16.png'), url('img/blogs/Новая папка/Rectangle 17.png'), url('img/blogs/Новая папка/Rectangle 20.png'));
+
+
+
+.blogs {
+    &-container {
+        @extend .goods-container;
+        margin: 0 auto;
+    }
+
+    &-header {
+        text-align: start;
+        padding-left: 115px;
+        margin-bottom: 28px;
+        &__title {
+            font-family: $mont;
+            line-height: 68px;
+            letter-spacing: 2%;
+            color: $black;
+            font-weight: 700;
+            text-align: start;
+            font-size: 48px;
+            width: 654px;
+
+            &-container {
+                max-width: 837 + 199 + 149px;
+                margin-bottom: 24px;
+                display: flex;
+                justify-content: space-between;
+                button {
+                    width: 149px;
+                    height: 48px;
+                    background: linear-gradient(140.08deg, #9CD2EE 3.42%, #00ACEE 95.98%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+                    font-weight: 700;
+                    color: #fff;
+                    font-size: 20px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        &__description {
+            font-weight: 400;
+            color: $black;
+            line-height: 32.78px;
+            font-family: $mont;
+            text-align: start;
+            font-size: 20px;
+            width: 770px;
+        }
+    }
+    &-item {
+        background-size: cover;
+        width: 530px;
+        height: 452px;
+        display: flex;
+        align-items: end;
+        &__content {
+            width: 310px;
+            height: 108px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(244, 244, 244, 1);
+            h1 {
+                font-family: $mont;
+                color: $black;
+                font-weight: 700;
+                font-size: 24px;
+                width: 199px;
+            }
+        }
+    }
+}

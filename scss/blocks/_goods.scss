@@ -1,0 +1,83 @@
+.goods {
+    &-container {
+        max-width: (310 * 4) + (20 * 3px);
+        margin: 80px auto;
+    }
+    &-header {
+        @extend .qualities-header;
+        &__title {
+            font-family: $mont;
+            line-height: 68px;
+            letter-spacing: 2%;
+            color: $black;
+            font-weight: 700;
+            text-align: center;
+            font-size: 48px;
+            width: 654px;
+        }
+        &__description {
+            font-weight: 400;
+            color: $black;
+            line-height: 32.78px;
+            font-family: $mont;
+            text-align: center;
+            font-size: 20px;
+            width: 770px;
+        }
+    }
+    &-cards {
+        row-gap: 20px;
+        column-gap: 24px;
+        margin-top: 56px;
+        justify-content: center
+    }
+    &-card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 12px 18px 30px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        height: 420px;
+        width: 310px;
+        padding-bottom: 22px;
+        &__content {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            // gap: 28px;
+            padding-left: 33px;
+            &--title {
+                font-family: $mont;
+                color: $black;
+                font-weight: 700;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            &--price {
+                display: flex;
+                align-items: center;
+                align-items: center;
+                gap: 16px;
+                margin-top: 5px;
+                margin-bottom: 28px;
+                &--title {
+                    font-family: $mont;
+                    color: $orange;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+            &--user {
+                display: flex;
+                align-items: center;
+                gap: 17px;
+                align-items: center;
+                &-name {
+                    color: $black;
+                    font-weight: 700;
+                    font-family: $mont;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

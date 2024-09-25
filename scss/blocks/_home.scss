@@ -1,0 +1,51 @@
+.home {
+    &-container {
+        max-width: $width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;  
+        margin-top: 143px;  
+        padding-bottom: 136px;   
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &__main-text {
+            max-width: 472px;
+            line-height: 68.11px;
+            font-family: $mont;
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff;
+        }
+        &__text {
+            max-width: 440px;
+            line-height: 31.58px;
+            font-family: $mont;
+            font-size: 20px;
+            font-weight: 400;
+            color: #fff;
+        }
+        &__buttons {
+            display: flex;
+            gap: 44 - 24px;
+            button {
+                &:nth-child(1) {
+                    @extend .btn;
+                    width: 155px;
+                    height: 48px;
+                }
+                &:nth-child(2) {
+                    width: 155px;
+                    height: 48px;
+                    backdrop-filter: opacity(0);
+                    border: 1px solid rgba(255, 142, 30, 1);
+                    border-radius: 10px;
+                    color: #fff;
+                    font-family: $mont;
+                }
+            }
+        }
+    }
+}
